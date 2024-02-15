@@ -1,0 +1,141 @@
+/* importing fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* variables */
+
+:root {
+    --primary-color: #507C5E;
+    --secondary-color: #8FB79C;
+    --accent1-color: #EBE0D5;
+    --accent2-color: #F5F5F5;
+
+    --heading-font: "DM Serif Display", Georgia, serif;
+    --paragraph-font: Helvetica, sans-serif;
+}
+
+/* html selectors */
+
+body {
+    max-width: 1080px;
+    background-color: var(--accent1-color);
+    font-family: var(--paragraph-font);
+    margin: 0 auto;
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+div {
+    text-align: center;
+}
+
+div > * {
+    text-align: left;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 10px 20px;
+    background-color: var(--accent2-color);
+}
+
+h2 {
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+h3 {
+    color: var(--secondary-color);
+    padding-left: 10px;
+    padding-top: 6px;
+    margin-bottom: -5px;
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: -20px;
+}
+
+input, button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 1em;
+}
+
+input {
+    width: 30%;
+    padding-left: 10px;
+    background-color: var(--accent2-color);
+    border: 1.5px solid var(--accent2-color);
+}
+
+input:focus {
+    outline: solid 1.5px var(--secondary-color);
+}
+
+button {
+    display: inline-block;
+    border: 1.5px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+}
+
+section {
+    background-color: var(--accent2-color);
+    border: var(--primary-color);
+    margin: -2px 0px;
+}
+
+p {
+    padding: 4px 10px;
+}
+
+i::before {
+    content: "\a";
+    white-space: pre;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+/* ID selectors */
+
+#definitions {
+    padding: 0px 20px;
+}
+
+#inputError {
+    background-color: var(--accent2-color);
+}
+
+#inputError b {
+    color: var(--primary-color);
+}
